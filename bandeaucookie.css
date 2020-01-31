@@ -1,0 +1,82 @@
+#BandeauInfoCookie{
+	font-size:13px;
+	color: #fff;
+	font-family:Arial,sans-serif;
+	text-align: center;
+	display:block;
+	position: fixed;
+	height: auto;
+	width: 100%;
+	left: 0px;
+	bottom: 0px; /* top : 0px, pour mettre le bandeau tout en haut / bottom: 0px; pour mettre le bandeau tout en bas */
+	margin: 0px;
+	padding: 10px 0;
+	background-color: rgb(0, 0, 0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	z-index:9999;
+}
+#ConteneurOk{font-size: 12px;color:#fff;margin-left:20px;font-weight:bold;}
+#ConteneurOk:hover{font-size: 12px;color:#4285F4;font-weight:bold;}
+
+#LienInfosCookie a{
+	color:#fff;
+	text-decoration:underline;
+	cursor:pointer;
+	padding-left:20px;
+	white-space:nowrap;
+}
+
+#ConteneurInfosCookie{
+    height: auto;
+    padding: 15px 0;
+    width: 98%;	
+	background-color:black;
+    left: 0;
+    bottom: 35px; /* top : 35px, pour mettre le contenu tout en haut / bottom: 35px; pour mettre le contenu tout en bas */
+    width: 100%;
+    z-index: 9999;
+	position:fixed;
+}
+
+#ContenuInfosCookie{
+	width:50%;
+    max-height: 500px;	
+	font-size:13px;	
+	font-family:Arial,sans-serif;
+	color:#fff;
+	text-align: justify;
+	border:1px solid #FFFFFF;
+	margin: auto;
+	padding: 10px;
+    overflow: auto;
+}
+
+#CroixClose{
+	width: 25px;
+	height: 25px;	
+	font-size: 18px;
+	color: #000;
+	background-color: #fff;		
+	margin-top:-20px;
+	float: right;
+	cursor:pointer;	
+	position:absolute;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-transition:all 0.2s;
+	transition:all 0.2s;
+}
+
+#CroixClose:hover{	
+	width:29px;
+	height:29px;
+	font-size:21px;
+	color:#4285F4;
+	-webkit-transition:all 0.2s;
+	transition:all 0.2s;
+}

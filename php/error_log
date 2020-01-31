@@ -1,0 +1,7 @@
+[25-Nov-2019 15:56:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kzyo13jw/public_html/php/register.php:2) in /home/kzyo13jw/public_html/php/register.php on line 72
+[25-Nov-2019 15:56:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kzyo13jw/public_html/php/register.php:2) in /home/kzyo13jw/public_html/php/register.php on line 85
+[25-Nov-2019 16:03:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kzyo13jw/public_html/php/register.php:2) in /home/kzyo13jw/public_html/php/register.php on line 72
+[25-Nov-2019 16:03:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kzyo13jw/public_html/php/register.php:2) in /home/kzyo13jw/public_html/php/register.php on line 85
+[25-Nov-2019 16:16:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kzyo13jw/public_html/php/register.php:2) in /home/kzyo13jw/public_html/php/register.php on line 72
+[25-Nov-2019 16:16:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kzyo13jw/public_html/php/register.php:2) in /home/kzyo13jw/public_html/php/register.php on line 85
+[25-Nov-2019 16:33:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kzyo13jw/public_html/php/register.php:2) in /home/kzyo13jw/public_html/php/register.php on line 85
