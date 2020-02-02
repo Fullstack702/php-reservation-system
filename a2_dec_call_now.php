@@ -60,27 +60,29 @@
         </div>
     <?php } ?>
     <?php
-    if ($authenticated) {
-        if ($result && $statement->rowCount() > 0) { ?>
-            <div class="result">
-                <table style="width:100%">
-                    <thead>
-                        <th>Date Lead</th>
-                        <th>Horaire de contact</th>
-                        <th>J'habite</th>
-                        <th>Nom</th>
-                        <th>Prénom</th>
-                        <th>Adresse</th>
-                        <th>CP</th>
-                        <th>Ville</th>
-                        <th>E-mail</th>
-                        <th>Téléphone</th>
-                        <th>Referer</th>
-                        <th>IP</th>
-                        <th>OS</th>
-                        <th>Device</th>
-                        <th></th>
-                    </thead>
+    if ($authenticated) { ?>
+        <div id="sound"></div>
+        <div class="result">
+            <table style="width:100%">
+                <thead>
+                    <th>Date Lead</th>
+                    <th>Horaire de contact</th>
+                    <th>J'habite</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Adresse</th>
+                    <th>CP</th>
+                    <th>Ville</th>
+                    <th>E-mail</th>
+                    <th>Téléphone</th>
+                    <th>Referer</th>
+                    <th>IP</th>
+                    <th>OS</th>
+                    <th>Device</th>
+                    <th></th>
+                </thead>
+                <?php
+                if ($result && $statement->rowCount() > 0) { ?>
                     <tbody>
                         <?php foreach ($result as $row) { ?>
                             <tr>
@@ -102,12 +104,14 @@
                             </tr>
                         <?php } ?>
                     </tbody>
-                </table>
-            </div>
-        <?php } else { ?>
-            No results founds
-    <?php }
-    } ?>
+                <?php } else { ?>
+                    No results founds
+                <?php } ?>
+
+            </table>
+        </div>
+
+    <?php   } ?>
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content ">
@@ -144,6 +148,28 @@
                 $('#myModal').modal('hide')
                 location.reload();
             }, 1000);
+        }
+
+        var fetch = setInterval(getNewInstantCall, 10000);
+
+        function getNewInstantCall() {
+            var lastTime = $("table tr:last-child td:first-child").text();
+            $.post("php/getNewInstantCall.php", {
+                    time: lastTime
+                },
+                function(data, status, xhr) {
+                    $('table tbody tr:last-child').after(data);
+                    if (data != '') {
+                        playSound('message')
+                    }
+                }, 'json');
+
+        }
+
+
+        function playSound(filename) {
+            var oggSource = '<source src="' + filename + '.ogg" type="audio/ogg">';
+            document.getElementById("sound").innerHTML = '<audio autoplay="autoplay">' + oggSource + '</audio>';
         }
     </script>
 </body>

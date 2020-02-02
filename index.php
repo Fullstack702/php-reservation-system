@@ -51,18 +51,18 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWDGPNX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="direct-call">
-        <a>
+    <!-- <div class="direct-call">
+        <a href="tel:+33481092867">
             <div class="callback">
                 <img src="images/phone-receiver.png" alt="callback" class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"><noscript><img src="/wp-content/uploads/2019/01/phone-receiver.png" alt="callback"></noscript>
                 <span style="font-size:9px;float:left;margin-left: 10px;margin-top: 10px;margin-right: 60px;line-height:1;">
                     <span style="font-size:12px;">Un conseiller en direct</span> <br>Numéro non surtaxé</span><br>
                 <p>
-                    06 61 57 01 22
+                    04 81 09 28 67
                 </p>
             </div>
         </a>
-    </div>
+    </div> -->
 
     <!--begin home section -->
     <section class="home-section" id="home">

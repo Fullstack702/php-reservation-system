@@ -109,7 +109,7 @@
               <div id="alert-time-form">
                 <div>
                   <button id="Call me now" type="button" class="btn btn-primary" onclick="on_call_me_now();return false">
-                    Call me now
+                    Rappelez moi immédiatement
                   </button>
                 </div>
                 <span style="font-size:20px">
