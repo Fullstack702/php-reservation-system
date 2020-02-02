@@ -150,7 +150,7 @@
             }, 1000);
         }
 
-        var fetch = setInterval(getNewInstantCall, 10000);
+        var fetch = setInterval(getNewInstantCall, 60000);
 
         function getNewInstantCall() {
             var lastTime = $("table tr:last-child td:first-child").text();
